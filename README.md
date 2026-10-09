@@ -1,0 +1,93 @@
+# Cours d'introduction à la programmation
+
+## Plan de cours
+
+- [ ] Numération
+  - [x] Bases (décimal, hexadécimal, octal, binaire)
+  - [ ] Conversion de bases
+  - [x] Complément à un
+  - [x] Complément à deux
+  - [ ] Arithmétique binaire (et, ou, ou exclusif, négation)
+- [ ] Processus de développement
+  - [ ] Outils
+    - [ ] Environnement intégré (IDE)
+    - [x] Compilateur (*compiler*)
+    - [x] Chaîne de développement (*toolchain*)
+  - [ ] Cycle de développement
+  - [ ] Cycle de compilation
+  - [x] Installation d'un environnement de développement
+  - [ ] Programmes et processus
+- [ ] Généralités du langage C
+  - [ ] Séquences
+  - [ ] Embranchements (`if`, `switch`)
+  - [ ] Boucles (`while`, `do..while`, `for`)
+  - [ ] Sauts (`break`, `continue`, `return`, `goto`)
+- [ ] Types de données
+  - [ ] Typage
+  - [ ] Stockage des données en mémoire
+  - [x] Entiers naturels
+  - [x] Entiers relatifs
+  - [ ] Nombres réels (virgule flottante)
+  - [ ] Caractères
+    - [ ] Table ASCII
+  - [ ] Chaînes de caractères
+  - [ ] Booléens
+- [ ] Interaction utilisateur en mode console
+  - [ ] Entrée standard
+  - [ ] Sortie standard
+  - [ ] Sortie d'erreur standard
+  - [ ] Questions/réponses avec `printf` et `scanf`
+  - [ ] Formater un résultat sous forme tabulée et lisible
+  - [ ] Menu (choix multiples)
+- [ ] Opérateurs
+  - [ ] Opérateurs du langage C
+  - [ ] Priorité des opérateurs
+  - [ ] Expressions
+  - [ ] Promotion et promotion implicite
+- [ ] Conception
+  - [ ] Choix des structures de contrôle adaptées à des problèmes
+  - [ ] Algorithmes simples (min, max, moyenne, …)
+  - [ ] Manipulation de chaînes
+  - [ ] Manipulation de tableaux
+  - [ ] Manipulation de bits
+- [ ] Algorithmie
+  - [ ] Complexité d'un algorithme
+  - [ ] Exemples d'algorithmes
+  - [ ] Algorithmes de tri (tri à bulles)
+- [ ] Fonctions
+  - [ ] Passage par valeur et par adresse
+  - [ ] Utilisation de la valeur de retour
+  - [ ] Prototypes de fonctions
+- [ ] Types de données composées
+  - [ ] Structures
+  - [ ] Unions
+  - [ ] Tableaux
+  - [ ] Énumérations
+- [ ] Bibliothèques standard
+  - [ ] `<math.h>`
+    - [ ] Fonctions trigonométriques
+    - [ ] Exponentielle
+    - [ ] Logarithme
+  - [ ] `<string.h>`
+    - [ ] Comparaison de chaînes de caractères
+    - [ ] Concaténation de chaînes de caractères
+    - [ ] Copie de chaînes de caractères
+    - [ ] Longueur d'une chaîne de caractères
+    - [ ] Recherche d'une sous-chaîne dans une chaîne de caractères
+  - [ ] `<stdio.h>`
+    - [x] `printf`
+    - [ ] `scanf`
+    - [ ] `putchar`
+    - [ ] `getchar`
+    - [ ] `puts`
+    - [ ] `gets`
+- [ ] Structure du code
+  - [ ] Corriger les erreurs de syntaxe
+  - [ ] Corriger les erreurs sémantiques
+  - [ ] Indentation du code
+  - [ ] Commentaires
+
+## Liens utiles
+
+[Cartes de référence](https://heig-cheatsheet.github.io/web/)
+[Cours d'informatique](https://heig-tin-info.github.io/handbook/)
