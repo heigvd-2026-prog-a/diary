@@ -440,6 +440,46 @@ Limite: `atoi` ne permet pas de détecter une erreur (`atoi("abc")` retourne `0`
 comme `atoi("0")`). On lui préférera plus tard `strtol`, qui signale les
 erreurs.
 
+### Avec gestion d'erreur: `sscanf`
+
+`sscanf` (*string scanf*) fonctionne comme `scanf`, mais au lieu de lire le
+clavier, elle **lit dans une chaîne** déjà en mémoire (ici `argv[1]`). Elle
+utilise les mêmes formats (`%d`, `%c`, ...) et, comme `scanf`, retourne le
+**nombre de conversions réussies**. C'est ce qui permet de détecter une erreur.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// ./a.out prout
+int main(int argc, char* argv[]) {
+    if (argc < 2) return 1;
+
+    int x;
+
+    // Bien, mais aucune gestion des erreurs:
+    // atoi("prout") retourne 0, indistinguable de atoi("0")
+    x = atoi(argv[1]);
+
+    // Très bien: on teste la valeur de retour
+    // 1 conversion attendue (%d); si != 1, la chaîne n'est pas un entier
+    if (sscanf(argv[1], "%d", &x) != 1) {
+        return 1;   // erreur: "prout" n'est pas un nombre
+    }
+
+    printf("x = %d\n", x);
+}
+```
+
+| Appel | `atoi` | `sscanf(..., "%d", &x)` |
+|-------|--------|-------------------------|
+| `"42"` | `42` | retourne `1`, `x = 42` |
+| `"0"` | `0` | retourne `1`, `x = 0` |
+| `"prout"` | `0` (erreur invisible) | retourne `0`, `x` inchangé |
+
+Comme pour `scanf`, le `&` est obligatoire: `sscanf` doit pouvoir **écrire**
+dans `x`.
+
 ---
 
 ## 7. Mise en pratique: arguments + conversion ([parameters.c](parameters.c))
