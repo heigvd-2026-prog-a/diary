@@ -128,3 +128,5 @@ Si la valeur transmise est négative, on aligne le triangle à droite:
  ****
 *****
 ```
+
+La solution est disponible [ici](triangle.c)
